@@ -23,7 +23,7 @@ Step 2: Create method to convert sorted array to balanced BST
 			root.right = ArrayToBST(arr[mid+1])
 		}
 
-Step 3: Display traversed BST
+Step 3: Display traversed/Balanced BST
 
 		preOrder(node){
 			#Parent, Left, Right
