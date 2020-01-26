@@ -1,0 +1,47 @@
+Algorithm to convert sorted array to Binary Search Tree
+
+Step 1: Create Node
+		Node(int d){
+			Node.data = d
+			Node.left = Null
+			Node.Right = Null
+		}
+		
+Step 2: Create method to convert sorted array to balanced BST
+		ArrayToBST(arr, start, end){
+			
+			#Find mid element
+			mid = (start+end)/2
+			
+			#create root
+			root=Node(arr[mid])
+			
+			#push element to node.left
+			root.left = ArrayToBST(arr[mid-1])
+			
+			#push element to node.right
+			root.right = ArrayToBST(arr[mid+1])
+		}
+
+Step 3: Display traversed BST
+
+		preOrder(node){
+			#Parent, Left, Right
+			print(node.data)
+			node.left
+			node.right
+		}
+		
+		inOrder(node){
+			#Left, Parent, Right
+			node.left
+			print(node.data)
+			node.right
+		}
+		
+		postOrder(node){
+			#Left, Right, Parent
+			node.left
+			node.right
+			print(node.data)
+		}
