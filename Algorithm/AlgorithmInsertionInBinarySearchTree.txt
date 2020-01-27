@@ -1,0 +1,39 @@
+Algorithm Insertion in Binary Search Tree
+
+Step 1: Create Node
+		Node(int d){
+			Node.data = d
+			Node.left = Null
+			Node.Right = Null
+			
+
+Step 2: Create NewNode{
+			Node(int d){
+				Node.parent = NULL
+				Node.data = d
+				Node.left = Null
+				Node.Right = Null
+			}
+		}
+
+Step 3: Create method InsertNewNode
+	
+		InsertNewNode(node, newNode){
+			y = Null
+			x = node
+			z = newNode
+			while x != NULL
+			y=x
+			if z.data < x.data
+				x=x.left
+			else:
+				x=x.right
+			
+			z.parent = y
+			if y==Null
+				y = node
+			elseif z.data < y.data
+				y.left = z
+			else
+				y.right = z
+		}
