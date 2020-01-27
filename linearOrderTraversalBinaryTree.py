@@ -28,6 +28,9 @@ def LevelOrderTree(root):
 
         if current.right != None:
             Q.put(current.right)
+    
+    # Release memory after program execution
+    del Q, current
 
 # Inputs
 
@@ -77,3 +80,6 @@ root.right.left.right.left = Node('H')
 
 # Passing root to LevelOrderTree method
 LevelOrderTree(root)
+
+# Releae memory after program execution
+del root

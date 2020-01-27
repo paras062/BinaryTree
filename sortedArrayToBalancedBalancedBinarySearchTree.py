@@ -76,3 +76,6 @@ inOrder(root)
 
 print("Post Order")
 postOrder(root)
+
+# Releae memory after program execution
+del root

@@ -58,3 +58,6 @@ if result_IterativeSearchTree != None:
     print(f"Key {result_IterativeSearchTree.data} is present")
 else:
     print("Key not found")
+
+# Releae memory after program execution
+del root
