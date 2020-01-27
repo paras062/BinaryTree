@@ -1,0 +1,36 @@
+Algorithm Search Key in Binary Search Tree
+
+
+
+Step 1: Create Node
+		Node(int d){
+			Node.data = d
+			Node.left = Null
+			Node.Right = Null
+		}
+		
+---- Recursive Tree Search
+Step 2: Create method to perfrom recursive tree search in Binary Tree
+		
+		recursiveTreeSearch(node, key){
+			if node == NULL or key == node.data
+				return node
+			
+			if key<node.data
+				return recursiveTreeSearch(node.left, key)
+			
+			else
+				return recursiveTreeSearch(node.right, key)
+		}
+
+---- Iterative Tree Search
+Step 3: Create method to perform Iterative tree search in Binary Tree
+
+		iterativeTreeSearch(node, key){
+			while node != NULL and key != node.data{
+				if key<node.data
+					node = node.left
+				else
+					node=node.right
+			}
+		}
