@@ -1,0 +1,34 @@
+Algorithm for Linear Order Traversal
+
+Step 1: Create Node
+		Node(int d){
+			Node.data = d
+			Node.left = Null
+			Node.Right = Null
+		}
+		
+Step 2: Create Method to traverse binary tree in level order
+		LevelOrderTree(node){
+			1. ****Check if node is null****
+			if node == null:
+				return null
+			
+			2. ****Set Queue****
+				q = queue
+			
+			3. ****Insert first node in queue****
+				q.front(root)
+			
+			4. ****Insert child of parent node in queue****
+				while q not Empty
+			
+					current = q.pop()
+					5. ****Print first node in the queue****
+					print current -> data
+				
+					if current.left not NULL
+						q.insert(current->left)
+				
+					if current.right not NULL
+						q.insert(current->right)
+		}
